@@ -59,7 +59,9 @@ Events:
 
 $ kubectl describe pod quickstart-es-default-2 | less
 $ kubectl get node minikube -o jsonpath='{.status.capacity}'
-{"cpu":"8","ephemeral-storage":"17784752Ki","hugepages-2Mi":"0","memory":"5951280Ki","pods":"110"}[jbryan@archnux eck]$ kubectl get node minikube -o jsonpath='{.status.capacity}' | jq '.'
+{"cpu":"8","ephemeral-storage":"17784752Ki","hugepages-2Mi":"0","memory":"5951280Ki","pods":"110"}
+
+$ kubectl get node minikube -o jsonpath='{.status.capacity}' | jq '.'
 {
   "cpu": "8",
   "ephemeral-storage": "17784752Ki",
